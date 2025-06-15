@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+<div class="titre-galerie">
+<h1>Galerie</h1>
+</div>
+
+<section class="galerie">
+  <img src="gal2.jpg" alt="Les cascades de Banfora" onclick="ouvrirImage(this)">
+  <img src="gal5.jpg" alt="Les domes de Fabédougou" onclick="ouvrirImage(this)">
+  <img src="gal6.jpg" alt="Le Lac Tengréla" onclick="ouvrirImage(this)">
+  <img src="gal3.jpg" alt="Parc de Banfora" onclick="ouvrirImage(this)">
+  <img src="https://scontent.foua4-1.fna.fbcdn.net/v/t1.6435-9/128610208_2222389724559773_7390588458992451252_n.jpg?_nc_cat=105&ccb=1-7&_nc
+_sid=833d8c&_nc_ohc=t8AY43C1FrYQ7kNvwHeI3_M&_nc_oc=AdnIGEomvFOXLItNfZD_r5PV56SRCFxP-P10rBGx1fImk1tv6ub3OKQiSWyuJfu4Yc7UZ7wo8MqAbu4DkqlMF6dD&_nc
+_zt=23&_nc_ht=scontent.foua4-1.fna&_nc_gid=oKnaHhpdNqTsgzCGgOqYmQ&oh=00_AfPkOwieRazew-gl9ju6x5Sn1ZZv90AmPWETgz78_w8jkA&oe=687588CA" alt="Salle Polyvalente" onclick="ouvrirImage(this)">
+  <img src="gal10.jpg" alt="Place de la Nation" onclick="ouvrirImage(this)">
+  <img src="IMG-20230810-WA0111.jpg" alt="Statue de KOUDIABA" onclick="ouvrirImage(this)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rond_Point_Ronier_de_banfora.jpg/1536px-Rond_Point_Ronier_de_banfora.jpg" alt="Statue du Ronier" onclick="ouvrirImage(this)">
+  <img src="gal2.jpg" alt="Les Cascades de Banfora" onclick="ouvrirImage(this)">
+  <img src="gal9.jpg" alt="Parc Malicia" onclick="ouvrirImage(this)">
+  <img src="gal4.jpg" alt="Domes de Fabédougou" onclick="ouvrirImage(this)">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npi3dtwcec90m631LMuooqfHS_9yV80NdvaZuzuHMbDX13QNA3x5SAzY3Mp28AXJwzsuDK9W2JyxykKJI_7cKZ1JZM3bsMJRi9N0l5
+ufMgEFlw3iQQ7GesXqCW-7KATpK82j64wiA=w289-h312-n-k-no" alt="Stade de Banfora" onclick="ouvrirImage(this)">
+  <img src="gal8.jpg" alt="Cathédrale de Banfora" onclick="ouvrirImage(this)">
+</section>
+
+<!-- Fenêtre image en grand -->
+<div id="popup" class="popup" onclick="fermerImage()">
+  <img id="popup-img" src="">
+</div>
+
+<script>
+  function ouvrirImage(img) {
+    document.getElementById("popup-img").src = img.src;
+    document.getElementById("popup").style.display = "flex";
+  }
+
+  function fermerImage() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
